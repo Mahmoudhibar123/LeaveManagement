@@ -1,5 +1,4 @@
 GEM
-  remote: https://rubygems.org/
   remote: https://rails-assets.org/
   specs:
     actioncable (5.2.3)
@@ -97,7 +96,6 @@ GEM
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
     pg (1.1.4)
-    puma (3.12.1)
     rack (2.0.7)
     rack-cors (1.0.3)
     rack-test (1.1.0)
@@ -158,6 +156,12 @@ GEM
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
 
+GEM
+  remote: https://rubygems.org/
+  specs:
+    puma (4.3.9)
+      nio4r (~> 2.0)
+
 PLATFORMS
   ruby
 
@@ -170,7 +174,7 @@ DEPENDENCIES
   devise_token_auth
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
-  puma (~> 3.11)
+  puma (~> 4.3)
   rack-cors
   rails (~> 5.2.3)
   rails-assets-angular-devise!
